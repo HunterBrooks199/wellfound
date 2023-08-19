@@ -1,0 +1,27 @@
+2023-08-19 10:52:03,607 INFO: Microblog startup [in C:\Users\hunte\wellfound\.venv\app\__init__.py:89]
+2023-08-19 10:52:17,453 ERROR: Exception on /explore [GET] [in C:\Users\hunte\wellfound\.venv\Lib\site-packages\flask\app.py:1414]
+Traceback (most recent call last):
+  File "C:\Users\hunte\wellfound\.venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hunte\wellfound\.venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hunte\wellfound\.venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hunte\wellfound\.venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hunte\wellfound\.venv\app\main\routes.py", line 28, in explore
+    posts = Post.query.order_by(Post.timestamp.desc()).paginate(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Query.paginate() takes 1 positional argument but 4 were given
+2023-08-19 10:54:00,852 INFO: Microblog startup [in C:\Users\hunte\wellfound\.venv\app\__init__.py:89]
+2023-08-19 10:54:16,589 INFO: Microblog startup [in C:\Users\hunte\wellfound\.venv\app\__init__.py:89]
+2023-08-19 11:03:36,063 INFO: Microblog startup [in C:\Users\hunte\wellfound\.venv\app\__init__.py:89]
+2023-08-19 11:04:47,036 INFO: Microblog startup [in C:\Users\hunte\wellfound\.venv\app\__init__.py:89]
+2023-08-19 11:05:05,788 INFO: Microblog startup [in C:\Users\hunte\wellfound\.venv\app\__init__.py:89]
+2023-08-19 11:07:31,363 INFO: Microblog startup [in C:\Users\hunte\wellfound\.venv\app\__init__.py:89]
+2023-08-19 11:07:57,384 INFO: Microblog startup [in C:\Users\hunte\wellfound\.venv\app\__init__.py:89]
+2023-08-19 11:09:24,395 INFO: Microblog startup [in C:\Users\hunte\wellfound\.venv\app\__init__.py:89]
