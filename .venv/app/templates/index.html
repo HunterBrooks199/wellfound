@@ -8,6 +8,14 @@
             <td>
                 <br>
                 <div id="post">This is my one and only blog post. Can you add more using a for loop?</div>
+                <script>
+                    var post = document.getElementById("post");
+                    var myPost = '';
+                    for (var i = 0; i < 5; i++) {
+                        myPost += '<tr><td><div id="post ' + (i + 1) + '"> This is me adding more posts. This is post number: ' + (i + 1) + '</div></td></tr>';
+                    }
+                    post.innerHTML = myPost
+                </script>
             </td>
         </tr>
     </table>
